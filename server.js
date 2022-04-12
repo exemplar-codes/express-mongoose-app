@@ -8,7 +8,12 @@ app.get("/", (req, res) => {
 });
 
 app.get("/users", (req, res) => {
-  res.send({ mssg: "Users" });
+  const users = require("./models/just_data");
+  res.send({ mssg: "Hello", users }).sendStatus(204);
+});
+
+app.get("/users-page", (req, res) => {
+  res.sendFile("./users.html", { root: "./public" });
 });
 
 const port = process.env.PORT || 3000;
