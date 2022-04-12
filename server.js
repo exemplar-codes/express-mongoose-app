@@ -7,7 +7,11 @@ app.get("/", (req, res) => {
   res.sendFile("./index.html");
 });
 
-const port = process.env.PORT || 3002;
+app.get("/users", (req, res) => {
+  res.sendFile("./users.html");
+});
+
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
   console.log(`App running on port ${port}`);
