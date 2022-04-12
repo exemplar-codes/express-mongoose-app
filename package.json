@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/exemplar-codes/express-mongoose-app/issues"
   },
-  "homepage": "https://github.com/exemplar-codes/express-mongoose-app#readme"
+  "homepage": "https://github.com/exemplar-codes/express-mongoose-app#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
