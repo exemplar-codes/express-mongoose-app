@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/users", (req, res) => {
-  res.sendFile("./users.html");
+  res.send({ mssg: "Users" });
 });
 
 const port = process.env.PORT || 3000;
